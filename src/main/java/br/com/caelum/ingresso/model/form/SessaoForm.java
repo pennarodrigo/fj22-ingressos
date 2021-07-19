@@ -1,5 +1,7 @@
 package br.com.caelum.ingresso.model.form;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalTime;
 
 import javax.validation.constraints.NotNull;
@@ -30,6 +32,7 @@ public class SessaoForm {
 		Sessao sessao = new Sessao(this.horario, filme, sala);
 		return sessao;
 	}
+
 
 	public Integer getSalaId() {
 		return salaId;
